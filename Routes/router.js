@@ -48,16 +48,9 @@ router.put('/edit/:_id',restaurantController.editRest)
 
 router.post('/user/register',userController.registerController)
 
-
-
-// single with _id
-
-router.get('/user/single/:_id',userController.getuserid)
-
 //  get all user
 
 router.get('/user/all',userController.getAlluser)
-
 
 
 // login

@@ -53,20 +53,6 @@ exports.getAlluser=async(req,res)=>{
 
 
 
-// get a user with _id
-
-exports.getuserid=async(req,res)=>{
-    const{_id}=req.params
-    try{
-        const singleuser=await users.findOne({_id})
-        res.status(200).json(singleuser)
-    }
-    catch(err){
-        res.status(401).json(err)
-    }
-}
-
-
 
 // login
 

@@ -1,6 +1,6 @@
 const mongoose=require('mongoose')
 
-const connectionString=process.env.DATABASE
+const connectionString=process.env.MONGODB_URI
 
 mongoose.connect(connectionString).then(()=>{
     console.log('restuarant server connected successfully to mongodb atlas');
